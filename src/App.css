@@ -1,0 +1,7 @@
+body{
+    scroll-snap-type: proximity;
+}
+
+.snap-section{
+    scroll-snap-type: mandatory;
+}
