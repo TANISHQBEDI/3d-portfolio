@@ -35,7 +35,10 @@ function MobileAnimation() {
                 style={{
                     background: "radial-gradient(circle at 50% 50%, #b0b0b0, #444)",
                 }}
-            />
+            >
+                <img src="/compressedImages/0001.jpg" alt="Image" className="w-full h-full object-cover"/>
+                
+            </div>
 
             {/* Scrollable sections */}
             <div className="snap-y snap-mandatory overflow-y-scroll">

@@ -6,7 +6,7 @@ import ProjectsTitle from "../sections/ProjectsTitle";
 
 function getCurrentFrame(index) {
   // return `/frames/${index.toString().padStart(4, "0")}.png`;
-  return `/compressedImages/${index.toString().padStart(4, "0")}.png`;
+  return `/compressedImages/${index.toString().padStart(4, "0")}.jpg`;
 }
 
 const ScrollComp = ({ numFrames = 240 }) => {
@@ -121,10 +121,20 @@ const ScrollComp = ({ numFrames = 240 }) => {
 
   return (
     <div style={{ height: `${scrollHeight}px` }} >
-      <canvas
-        className={`h-[100vh] w-[100vw] ${isFixed ? "fixed" : "absolute"} ${isFixed ? "" : "top-[300vh]"}  top-0 left-0 -z-10`}
-        ref={canvasRef}
-      />
+      {/* <div className="h-[100vh] w-[100vw]"
+        style={{
+          background: "radial-gradient(circle at 50% 50%, #b0b0b0, #444)",
+      }}
+      > */}
+        <canvas
+          className={`h-[100vh] w-[100vw] ${isFixed ? "fixed" : "absolute"} ${isFixed ? "" : "top-[300vh]"}  top-0 left-0 -z-10`}
+          ref={canvasRef}
+          style={{
+            background: "radial-gradient(circle at 50% 50%, #b0b0b0, #444)",
+        }}
+        />
+      {/* </div> */}
+      
       <div className="snap-y snap-mandatory overflow-y-scroll">
         <div className="h-[100vh] w-[100vw] flex items-center justify-center snap-center snap-section">
           <Name/>
