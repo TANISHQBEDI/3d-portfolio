@@ -5,7 +5,8 @@ import EduDetails from "../sections/EduDetails";
 import ProjectsTitle from "../sections/ProjectsTitle";
 
 function getCurrentFrame(index) {
-  return `/frames/${index.toString().padStart(4, "0")}.png`;
+  // return `/frames/${index.toString().padStart(4, "0")}.png`;
+  return `/compressedImages/${index.toString().padStart(4, "0")}.png`;
 }
 
 const ScrollComp = ({ numFrames = 240 }) => {
