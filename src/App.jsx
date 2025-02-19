@@ -6,6 +6,8 @@ import ScrollAnimation from './components/ScrollAnimation'
 import ScrollComp from './components/ScrollComp'
 import Navbar from './components/Navbar'
 import MobileAnimation from './components/MobileAnimation'
+import ProjectSection from './sections/ProjectsSection'
+import ContactSection from './components/Contact'
 
 function App() {
   const sectionHeight = window.innerHeight;
@@ -30,10 +32,10 @@ function App() {
       {/* <ScrollAnimation /> */}
       {/* <ScrollComp/> */}
       
-      <div id='projects' className="z-50 h-screen flex items-center justify-center bg-amber-300 flex-col">
-        <h1 className="text-4xl font-bold">Projects Section</h1>
-        <h1>Coming Soon</h1>
-      </div>
+      {/* <div id='projects' className="z-50 h-screen flex items-center justify-center bg-amber-300 flex-col">
+        <ProjectSection/>
+      </div> */}
+      <ContactSection/>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import Name from "../sections/Name";
 import Introduction from "../sections/Introduction";
 import EduDetails from "../sections/EduDetails";
 import ProjectsTitle from "../sections/ProjectsTitle";
+import ProjectSection from "../sections/ProjectsSection";
 
 function MobileAnimation() {
     const scrollHeight = 400 * window.innerHeight / 100; // 400vh
@@ -52,7 +53,7 @@ function MobileAnimation() {
                     <EduDetails />
                 </div>
                 <div className="h-[100vh] w-[100vw] flex items-center justify-center snap-center snap-section">
-                    <ProjectsTitle/>
+                    <ProjectSection/>
                 </div>
             </div>
         </div>

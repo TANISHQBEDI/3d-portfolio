@@ -3,6 +3,7 @@ import Name from "../sections/Name";
 import Introduction from "../sections/Introduction";
 import EduDetails from "../sections/EduDetails";
 import ProjectsTitle from "../sections/ProjectsTitle";
+import ProjectSection from "../sections/ProjectsSection";
 
 function getCurrentFrame(index) {
   // return `/frames/${index.toString().padStart(4, "0")}.png`;
@@ -146,7 +147,8 @@ const ScrollComp = ({ numFrames = 240 }) => {
           <EduDetails/>
         </div>
         <div className="h-[100vh] w-[100vw] flex items-center justify-center snap-center snap-section">
-          <ProjectsTitle/>
+          {/* <ProjectsTitle/> */}
+          <ProjectSection/>
         </div>
       </div>
       
